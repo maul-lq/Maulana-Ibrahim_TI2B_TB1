@@ -8,15 +8,19 @@
 /* Pengaturan dasar untuk body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #bce784;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 /* Header dan Navigasi */
 header {
-    background-color: #007acc;
-    color: #fff;
+    background-color: #5fd39f;
+    color: #503a55;
     padding: 20px;
     text-align: center;
 }
@@ -30,19 +34,22 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #503a55;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s;
 }
 .active {
-    background-color: #026aaf;
+    background-color: #535275;
+    color: #bce784;
     /* // create font to underline style */
     font-style: oblique;
 }
 
 nav ul li a:hover {
-    background-color: #005fa3;
+    border-radius: 15px;
+    background-color: #535275;
+    color: #5fd39f;
 }
 
 /* Main Content */
@@ -50,15 +57,28 @@ main {
     padding: 20px;
 }
 
+.mainsection-kontainer, section
+{
+    background-color: #348ba8;
+    border-radius: 30px;
+    padding: 1em;
+    width: 75em;
+    margin: 0 auto;
+}
+
 /* Footer */
 footer {
-    background-color: #007acc;
-    color: #fff;
+    background-color: #5fd39f;
+    color: #503a55;
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
 }
 
 .navbar-kontainer {
@@ -69,4 +89,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+p{
+    text-align: justify;
 }

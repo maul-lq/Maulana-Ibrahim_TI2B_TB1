@@ -5,7 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - Profil Saya</title>
+    <style>
+        .photo-profile {
+            background-color: #5fd39f;
+            width: 340px;
+            height: 340px;
+            margin: 1vh;
+            border-radius: 20px;
+        }
 
+        .bagian-teks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+            /* margin: 0 auto; */
+            padding-left: 2em;
+            padding-top: 2em;
+        }
+
+        .imagefavorite
+        {
+            background-color: black;
+            height: 400px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+    </style>
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
@@ -32,10 +58,29 @@
     </header>
 
     <main>
-        <section>
-            <h2>Tentang Saya</h2>
-            <p>Halo, saya Maulana Ibrahim. Di web ini, Kalian akan menemukan informasi tentang diri saya, keluarga, teman,
-                dan hobi saya.</p>
+        <section class="mainsection-kontainer">
+            <table class="table-layout">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <div class="imagefavorite"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bagian-teks">
+                            <h2>Tentang Saya</h2>
+                            <p>Halo, saya Maulana Ibrahim. Di web ini, Kalian akan menemukan informasi tentang diri
+                                saya, keluarga, teman,
+                                dan hobi saya. Website ini dibuat untuk memenuhi tugas besar ke-1 mata kuliah web dasar.
+                            </p>
+                        </td>
+                        <td style="width: 17%;"></td>
+                        <td>
+                            <div class="photo-profile">dsd</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
