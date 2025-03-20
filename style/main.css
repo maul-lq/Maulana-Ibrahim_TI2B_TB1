@@ -7,14 +7,14 @@
 
 /* Pengaturan dasar untuk body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #bce784;
     color: #333;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: nowrap;
+    justify-content: center;
 }
 
 /* Header dan Navigasi */
@@ -39,6 +39,7 @@ nav ul li a {
     padding: 5px 10px;
     transition: background-color 0.3s;
 }
+
 .active {
     background-color: #535275;
     color: #bce784;
@@ -57,12 +58,12 @@ main {
     padding: 20px;
 }
 
-.mainsection-kontainer, section
-{
+.mainsection-kontainer,
+section {
     background-color: #348ba8;
     border-radius: 30px;
     padding: 1em;
-    width: 75em;
+    width: 70em;
     margin: 0 auto;
 }
 
@@ -85,11 +86,13 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 .navbar-kontainer tr {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-p{
+
+p {
     text-align: justify;
 }
