@@ -1,0 +1,15 @@
+.personal {}
+
+h1.header {
+    justify-self: center;
+}
+
+.container {
+    display: grid;
+}
+
+.col1,
+.col2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}

@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal</title>
 
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/personal.css">
 
     <style>
-        section ul
-        {
+        section ul {
             list-style-type: square;
             margin-left: 1.2em;
             padding: 0;
         }
-        hr
-        {
+        hr {
             border-color: hsl(289, 19%, 28%);
         }
     </style>
-    
 </head>
-
 <body>
     <header>
         <table class="navbar-kontainer">
@@ -47,33 +43,50 @@
 
     <main>
         <section>
-            <h1>Profile</h1>
-            <hr>
-            <ul>
-                <li>
-                    Nama: Maulana Ibrahim
-                </li>
-                <li>
-                    Tempat, Tanggal Lahir: DEPOK, 01 Mei 2005
-                </li>
-                <li>
-                    Jenis Kelamin: Laki-laki
-                </li>
-                <li>
-                    Agama: Islam
-                </li>
-                <li>
-                    Alamat: Cipayung, Depok, Indonesia.
-                </li>
-                <li>
-                    Nomor HP: xxxxxxxx3xx9
-                </li>
-            </ul>
+            <div class="personal container">
+                <h1 class="header">Profile</h1>
+                <hr>
+
+                <!-- 1. Biodata Singkat -->
+                <h2>Biodata Singkat</h2>
+                <ul>
+                    <li>Nama Lengkap: Maulana Ibrahim</li>
+                    <li>Tempat & Tanggal Lahir: Depok, 01 Mei 2005</li>
+                    <li>Domisili: Depok, Indonesia</li>
+                    <li>Agama: Islam </li>
+                </ul>
+                
+                <!-- 2. Deskripsi Diri -->
+                <h2>Deskripsi Diri</h2>
+                <ul>
+                    <li>Kepribadian: NPC</li>
+                    <li>Minat: ???</li>
+                    <li>Hal yang Disukai: ???</li>
+                    <li>Hal yang Kurang Disukai: ???</li>
+                </ul>
+                
+                <!-- 3. Pendidikan & Pengalaman Akademik -->
+                <h2>Pendidikan & Pengalaman Akademik</h2>
+                <ul>
+                    <li>TK Nurul Hikmah Bojong Gede</li>
+                    <li>SDN BUKIT DURI 07 Jakarta</li>
+                    <li>SMPN 33 Jakarta</li>
+                    <li>SMK Asyafi'iyah Jakarta</li>
+                </ul>
+                
+                <!-- 4. Fakta Unik / Fun Facts -->
+                <h2>Fakta Unik / Fun Facts</h2>
+                <ul>
+                    <li>Hobi: Ngoding (dah kadaluarsa)</li>
+                    <li>Kebiasaan Unik: Melakukan ritual 1 atau 2 kali di tiap malam</li>
+                    <li>Kutipan Favorit: "Mari makan agar kita kenyang"</li>
+                </ul>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2023 Maulana Ibrahim. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
