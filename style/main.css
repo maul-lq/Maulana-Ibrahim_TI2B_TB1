@@ -17,6 +17,10 @@ body {
     justify-content: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 /* Header dan Navigasi */
 header {
     background-color: #5fd39f;
@@ -95,4 +99,8 @@ footer {
 
 p {
     text-align: justify;
+}
+
+hr {
+    border-color: hsl(289, 19%, 28%);
 }

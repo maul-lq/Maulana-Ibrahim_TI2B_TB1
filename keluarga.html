@@ -7,6 +7,48 @@
     <title>Keluarga</title>
 
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/keluarga.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        .flex-container .row
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            align-content: stretch;
+            margin-bottom: 1em;
+            gap: 2em;
+
+        }
+
+        .flex-items:nth-child(1) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+        }
+
+        .flex-items:nth-child(2) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: stretch;
+            order: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,10 +73,52 @@
         </table>
     </header>
     <main>
-        <section></section>
+        <section class="container">
+            <div class="flex-container">
+                <div class="flex-items">
+                    <h1>Keluarga</h1>
+                    <hr>
+                </div>
+                <div class="flex-items">
+                    <div class="flex-container row">
+                        <div class="flex-items">
+                            <div class="flex-container" style="flex-direction: column; align-items: center;">
+                                <img class="fotoprofile" src="./img/fotopersonal-1.jpeg" alt="Foto Ayah" height="512" width="384">
+                                <p>Ayah</p>
+                            </div>
+                        </div>
+                        <div class="flex-items">
+                            <div class="flex-container" style="flex-direction: column; align-items: center;">
+                                <img class="fotoprofile" src="./img/fotopersonal-1.jpeg" alt="Foto Ibu" height="512" width="384">
+                                <p>Ibu</p>
+                            </div>
+                        </div>
+                        <div class="flex-items">
+                            <div class="flex-container" style="flex-direction: column; align-items: center;">
+                                <img class="fotoprofile" src="./img/fotopersonal-1.jpeg" alt="Foto Apin" height="512" width="384">
+                                <p>Apin</p>
+                            </div>
+                        </div>
+                        <div class="flex-items">
+                            <div class="flex-container" style="flex-direction: column; align-items: center;">
+                                <img class="fotoprofile" src="./img/fotopersonal-1.jpeg" alt="Foto Ali" height="512" width="384">
+                                <p>Ali</p>
+                            </div>
+                        </div>
+                        <div class="flex-items">
+                            <div class="flex-container" style="flex-direction: column; align-items: center;">
+                                <img class="fotoprofile" src="./img/fotopersonal-1.jpeg" alt="Foto Maulana Ibrahim" height="512" width="384">
+                                <p>Maulana Ibrahim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Maulana Ibrahim. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
