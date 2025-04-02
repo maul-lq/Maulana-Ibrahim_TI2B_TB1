@@ -62,8 +62,7 @@ main {
     padding: 20px;
 }
 
-.mainsection-kontainer,
-section {
+.mainsection-kontainer, .container {
     background-color: #348ba8;
     border-radius: 30px;
     padding: 1em;

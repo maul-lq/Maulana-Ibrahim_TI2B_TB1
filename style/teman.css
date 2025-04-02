@@ -1,0 +1,21 @@
+hr {
+    margin-bottom: 2em;
+}
+
+img {
+    margin: 1vh;
+    border-radius: 20px;
+    background-color: #5fd39f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
