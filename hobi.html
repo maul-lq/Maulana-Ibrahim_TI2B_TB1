@@ -7,6 +7,24 @@
     <title>Hobi saya</title>
 
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/hobi.css">
+
+    <style>
+        section ul {
+            list-style-type: square;
+            margin-left: 1.2em;
+            padding: 0;
+        }
+
+        .flex-items {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +49,31 @@
         </table>
     </header>
     <main>
-        <section></section>
+        <section class="container">
+            <h1 style="text-align: left;">Hobi</h1>
+            <hr>
+            <div class="flex-container">
+                <div class="flex-items">
+                    <h2>Bermain Game</h2>
+                    <p>
+                        Saya sangat menyukai dunia game, terutama game strategi dan simulasi.
+                    </p>
+                </div>
+                <div class="flex-items">
+                    <h2>Mendengarkan Musik</h2>
+                    <p>Saya memiliki minat dalam bermain gitar dan mencoba menulis lagu. Bermain musik membantu saya
+                        mengekspresikan kreativitas dan memberikan relaksasi setelah seharian beraktivitas.</p>
+                </div>
+            </div>
+            <h1>Makanan Faovorit</h1>
+            <hr>
+            <p>Berikut adalah beberapa makanan favorit saya:</p>
+            <ul>
+                <li>Ketoprak</li>
+                <li>Mie Ayam</li>
+            </ul>
+            <p>Selain itu saya juga suka makanan pedas.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Maulana Ibrahim. All rights reserved.</p>

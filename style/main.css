@@ -65,9 +65,10 @@ main {
 .mainsection-kontainer, .container {
     background-color: #348ba8;
     border-radius: 30px;
-    padding: 1em;
+    padding: 1.7em;
     width: 70em;
     margin: 0 auto;
+    /* padding: 1vh; */
 }
 
 /* Footer */
@@ -102,4 +103,26 @@ p {
 
 hr {
     border-color: hsl(289, 19%, 28%);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.flex-container .row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-bottom: 1em;
+    gap: 2em;
+
 }
