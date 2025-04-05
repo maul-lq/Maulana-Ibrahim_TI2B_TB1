@@ -15,7 +15,15 @@ main img {
 
 .grid-container {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
     grid-template-columns: 1fr;
     gap: 1em;
+}
+
+.grid-item {
+    height: max-content; /* Ensure all grid items adjust to their content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
