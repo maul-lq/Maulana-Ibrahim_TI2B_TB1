@@ -14,3 +14,15 @@ main img {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .flex-container .row {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .fotoprofile {
+        width: 100%;
+        height: auto;
+    }
+}

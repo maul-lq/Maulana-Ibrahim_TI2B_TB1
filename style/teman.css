@@ -35,3 +35,23 @@ main img {
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+
+    .flex-container .row {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .fotoprofile {
+        width: 100%;
+        height: auto;
+    }
+}
