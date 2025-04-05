@@ -8,8 +8,31 @@
     <title>Beranda - Profil Saya</title>
     <link rel="stylesheet" href="./style/main.css">
     <style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .mainsection-kontainer {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         .photo-profile {
-            background-color: #5fd39f;
+            background-color: #3498db;
             width: calc(340px *1);
             height: calc(340px + 7em);
             margin: 1vh;
@@ -42,7 +65,7 @@
         }
 
         .imagefavorite {
-            /* background-color: black; */
+            background-color: #2980b9;
             background-size: cover;
             background-position: center;
             /* background-image: url("./img/fotoperpisahan1.jpeg"); */
@@ -73,6 +96,20 @@
             border: none;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
+        }
+
+        .kolomkomentar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .listkomentar .komentar {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
         }
     </style>
 </head>
@@ -129,7 +166,7 @@
             <hr>
             <h1>Halaman Komentar</h1>
             <!-- Updated .kolomkomentar markup for theme integration and one-line layout -->
-            <div class="kolomkomentar" style="background:#348ba8; padding:1em; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); max-width:800px; margin:1em auto;">
+            <div class="kolomkomentar" style="background:#34495e; padding:1em; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); max-width:800px; margin:1em auto;">
                 <form action="" method="post" style="display:flex; flex-direction:row; align-items:center; gap:1em;">
                     <label for="name" style="font-weight:bold; color:#fff;">Nama:</label>
                     <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required style="padding:0.5em; border:1px solid #ccc; border-radius:5px; flex:1;">
@@ -163,7 +200,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Maulana Ibrahim. Melangar aturan akan denda sebesar <strong>Rp 1 triliun </strong> rupiah, sesuai dengan aturan <a href="#">UU No. -72 Tahun 1 SM</a>.</p>
+        <p>&copy; 2023 Maulana Ibrahim. Melangar aturan akan denda sebesar <strong>Rp 1 triliun </strong> rupiah, sesuai dengan aturan <a href="#" class="linkUU">UU No. -72 Tahun 1 SM</a>.</p>
     </footer>
 </body>
 
