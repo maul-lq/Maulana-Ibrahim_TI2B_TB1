@@ -48,7 +48,7 @@ nav ul li a {
 
 .active {
     background-color: #535275;
-    color: #bce784;
+    color: #fafafa;
     /* // create font to underline style */
     font-style: oblique;
 }

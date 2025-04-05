@@ -41,17 +41,19 @@
             background-size: cover;
             background-position: center;
             /* background-image: url("./img/fotopinjol.jpeg"); */
-            animation: changePhotoProfile 28s infinite;
+            animation: changePhotoProfile 36s infinite; /* Updated duration for 9 images */
         }
 
         @keyframes changePhotoProfile {
-            0%, 14% { background-image: url("./img/fotopinjol.jpeg"); }
-            15%, 28% { background-image: url("./img/fotorois.jpeg"); }
-            29%, 42% { background-image: url("./img/pnj-1.jpeg"); }
-            43%, 56% { background-image: url("./img/fotohabibmamri.jpeg"); }
-            57%, 70% { background-image: url("./img/fotoraihanahmad.png"); }
-            71%, 84% { background-image: url("./img/fotogj.jpeg"); }
-            85%, 100% { background-image: url("./img/fotoanomalirindam2.jpeg"); }
+            0%, 11% { background-image: url("./img/fotopinjol.jpeg"); }
+            12%, 22% { background-image: url("./img/fotorois.jpeg"); }
+            23%, 33% { background-image: url("./img/pnj-1.jpeg"); }
+            34%, 44% { background-image: url("./img/fotohabibmamri.jpeg"); }
+            45%, 55% { background-image: url("./img/fotoraihanahmad.png"); }
+            56%, 66% { background-image: url("./img/fotogj.jpeg"); }
+            67%, 77% { background-image: url("./img/fotoanomalirindam2.jpeg"); }
+            78%, 88% { background-image: url("./img/fotoanomaligebi.jpeg"); } /* New image */
+            89%, 100% { background-image: url("./img/fotomahfudmd.jpeg"); } /* New image */
         }
 
         .bagian-teks {
@@ -73,20 +75,22 @@
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             /* Updated animation duration for slower transitions */
-            animation: changeImage 28s infinite;
+            animation: changeImage 32s infinite; /* Updated duration for 11 images */
             background-repeat: no-repeat;
         }
 
         @keyframes changeImage {
-            0%, 11% { background-image: url("./img/fotoperpisahan1.jpeg"); }
-            12%, 22% { background-image: url("./img/fotopnj.jpeg"); }
-            23%, 33% { background-image: url("./img/fotobelajarpai.jpeg"); }
-            34%, 44% { background-image: url("./img/fotodijogja.jpeg"); }
-            45%, 55% { background-image: url("./img/fotomiayam.png"); }
-            56%, 66% { background-image: url("./img/fotopersonal-1.jpeg"); }
-            67%, 77% { background-image: url("./img/fotoketoprak.jpeg"); }
-            78%, 88% { background-image: url("./img/fotosebelumwabah.jpeg"); }
-            89%, 100% { background-image: url("./img/fotodigunungnaikjeep.jpeg"); }
+            0%, 9% { background-image: url("./img/fotoperpisahan1.jpeg"); }
+            10%, 18% { background-image: url("./img/fotopnj.jpeg"); }
+            19%, 27% { background-image: url("./img/fotobelajarpai.jpeg"); }
+            28%, 36% { background-image: url("./img/fotodijogja.jpeg"); }
+            37%, 45% { background-image: url("./img/fotomiayam.png"); }
+            46%, 54% { background-image: url("./img/fotopersonal-1.jpeg"); }
+            55%, 63% { background-image: url("./img/fotoketoprak.jpeg"); }
+            64%, 72% { background-image: url("./img/fotosebelumwabah.jpeg"); }
+            73%, 81% { background-image: url("./img/fotodigunungnaikjeep.jpeg"); }
+            82%, 90% { background-image: url("./img/fotopetugaspolisitidur.jpeg"); } /* New image */
+            91%, 100% { background-image: url("./img/fotoperpisahan2.jpeg"); } /* New image */
         }
 
         hr {
@@ -97,20 +101,6 @@
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
-
-        .kolomkomentar {
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .listkomentar .komentar {
-            background-color: #f9f9f9;
-        }
-
-        footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-        }
     </style>
 </head>
 
@@ -120,7 +110,7 @@
             <tr>
                 <td>
                     <h1 class="header-title">
-                        <img src="favicon.svg" alt="Favicon" class="header-img">RFz
+                        <img src="favicon.svg" alt="Favicon" class="header-img">RFz - Halaman Utama
                     </h1>
                 </td>
                 <td>
@@ -165,7 +155,6 @@
             </table>
             <hr>
             <h1>Halaman Komentar</h1>
-            <!-- Updated .kolomkomentar markup for theme integration and one-line layout -->
             <div class="kolomkomentar" style="background:#34495e; padding:1em; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); max-width:800px; margin:1em auto;">
                 <form action="" method="post" style="display:flex; flex-direction:row; align-items:center; gap:1em;">
                     <label for="name" style="font-weight:bold; color:#fff;">Nama:</label>
@@ -181,7 +170,7 @@
                     <div class="komentar">
                         <p><strong>Prabowo</strong></p>
                         <hr>
-                        <p>Jangan lupa makan.</p>
+                        <p>Website ini sepertinya perlu di efisiensikan.</p>
                     </div>
                     <div class="komentar">
                         <p><strong>NPC 99</strong></p>
@@ -200,7 +189,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Maulana Ibrahim. Melangar aturan akan denda sebesar <strong>Rp 1 triliun </strong> rupiah, sesuai dengan aturan <a href="#" class="linkUU">UU No. -72 Tahun 1 SM</a>.</p>
+        <p>&copy; 2025 Maulana Ibrahim. Melangar aturan akan denda sebesar <strong>Rp 1 triliun </strong> rupiah, sesuai dengan aturan <a href="#" class="linkUU">UU No. -72 Tahun 1 SM</a>.</p>
     </footer>
 </body>
 
