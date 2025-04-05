@@ -1,14 +1,16 @@
 hr {
     margin-bottom: 2em;
+    border-color: #34495e;
 }
 
 main img {
     margin: 1vh;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #5fd39f;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
