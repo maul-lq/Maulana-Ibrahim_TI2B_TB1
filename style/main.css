@@ -124,5 +124,37 @@ hr {
     align-content: stretch;
     margin-bottom: 1em;
     gap: 2em;
+}
 
+.header-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.header-img {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+
+.spacer-td {
+    width: 17%;
+}
+
+/* Styling for listkomentar and individual komentar blocks */
+.listkomentar {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.komentar {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

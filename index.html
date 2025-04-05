@@ -14,6 +14,21 @@
             height: calc(340px + 7em);
             margin: 1vh;
             border-radius: 20px;
+            /* Added properties for animated background */
+            background-size: cover;
+            background-position: center;
+            /* background-image: url("./img/fotopinjol.jpeg"); */
+            animation: changePhotoProfile 28s infinite;
+        }
+
+        @keyframes changePhotoProfile {
+            0%, 14% { background-image: url("./img/fotopinjol.jpeg"); }
+            15%, 28% { background-image: url("./img/fotorois.jpeg"); }
+            29%, 42% { background-image: url("./img/pnj-1.jpeg"); }
+            43%, 56% { background-image: url("./img/fotohabibmamri.jpeg"); }
+            57%, 70% { background-image: url("./img/fotoraihanahmad.png"); }
+            71%, 84% { background-image: url("./img/fotogj.jpeg"); }
+            85%, 100% { background-image: url("./img/fotoanomalirindam2.jpeg"); }
         }
 
         .bagian-teks {
@@ -28,10 +43,27 @@
 
         .imagefavorite {
             /* background-color: black; */
-            background-image: url("./img/fotoperpisahan1.jpeg");
+            background-size: cover;
+            background-position: center;
+            /* background-image: url("./img/fotoperpisahan1.jpeg"); */
             height: 400px;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
+            /* Updated animation duration for slower transitions */
+            animation: changeImage 28s infinite;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes changeImage {
+            0%, 11% { background-image: url("./img/fotoperpisahan1.jpeg"); }
+            12%, 22% { background-image: url("./img/fotopnj.jpeg"); }
+            23%, 33% { background-image: url("./img/fotobelajarpai.jpeg"); }
+            34%, 44% { background-image: url("./img/fotodijogja.jpeg"); }
+            45%, 55% { background-image: url("./img/fotomiayam.png"); }
+            56%, 66% { background-image: url("./img/fotopersonal-1.jpeg"); }
+            67%, 77% { background-image: url("./img/fotoketoprak.jpeg"); }
+            78%, 88% { background-image: url("./img/fotosebelumwabah.jpeg"); }
+            89%, 100% { background-image: url("./img/fotodigunungnaikjeep.jpeg"); }
         }
 
         hr {
@@ -50,13 +82,8 @@
         <table class="navbar-kontainer">
             <tr>
                 <td>
-                    <h1 style="display: flex;
-                        align-items: center;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        justify-content: center;">
-                        <img src="favicon.svg" alt="Favicon"
-                            style="width: 65px; height: 65px; margin-right: 10px;">RFz
+                    <h1 class="header-title">
+                        <img src="favicon.svg" alt="Favicon" class="header-img">RFz
                     </h1>
                 </td>
                 <td>
@@ -92,18 +119,51 @@
                                 dan hobi saya. Website ini dibuat untuk memenuhi tugas besar ke-1 mata kuliah web dasar.
                             </p>
                         </td>
-                        <td style="width: 17%;"></td>
+                        <td class="spacer-td"></td>
                         <td>
-                            <div class="photo-profile">dsd</div>
+                            <div class="photo-profile"></div>
                         </td>
                     </tr>
                 </tbody>
             </table>
+            <hr>
+            <h1>Halaman Komentar</h1>
+            <!-- Updated .kolomkomentar markup for theme integration and one-line layout -->
+            <div class="kolomkomentar" style="background:#348ba8; padding:1em; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); max-width:800px; margin:1em auto;">
+                <form action="" method="post" style="display:flex; flex-direction:row; align-items:center; gap:1em;">
+                    <label for="name" style="font-weight:bold; color:#fff;">Nama:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required style="padding:0.5em; border:1px solid #ccc; border-radius:5px; flex:1;">
+                    
+                    <label for="comment" style="font-weight:bold; color:#fff;">Komentar:</label>
+                    <textarea id="comment" name="comment" rows="1" placeholder="Tulis komentar Anda di sini" required style="padding:0.5em; border:1px solid #ccc; border-radius:5px; flex:3;"></textarea>
+                    
+                    <input type="submit" value="Kirim" style="padding:0.5em 1em; background:#5fd39f; color:#503a55; border:none; border-radius:5px; cursor:pointer; transition:background 0.3s;" onmouseover="this.style.background='#53b98c'" onmouseout="this.style.background='#5fd39f'">
+                </form>
+                <hr>
+                <div class="listkomentar">
+                    <div class="komentar">
+                        <p><strong>Prabowo</strong></p>
+                        <hr>
+                        <p>Jangan lupa makan.</p>
+                    </div>
+                    <div class="komentar">
+                        <p><strong>NPC 99</strong></p>
+                        <hr>
+                        <p>Bagus sekali namanya.</p>
+                    </div>
+                    <div class="komentar">
+                        <p><strong>NPC 2</strong></p>
+                        <hr>
+                        <p>Jelek sekali web sampah kayak web pemerintah.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Maulana Ibrahim. All rights reserved.</p>
+        <p>&copy; 2023 Maulana Ibrahim. Melangar aturan akan denda sebesar <strong>Rp 1 triliun </strong> rupiah, sesuai dengan aturan <a href="#">UU No. -72 Tahun 1 SM</a>.</p>
     </footer>
 </body>
 
