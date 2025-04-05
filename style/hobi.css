@@ -9,3 +9,20 @@
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .flex-items {
+        width: 100%;
+        text-align: center;
+    }
+
+    .food-gallery {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .food-gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
